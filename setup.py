@@ -1,9 +1,9 @@
-import setuptools
+import setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setuptools.setup(
+setup.setup(
     name='sheets2pdf',
     version='0.0.1',
     author='José Roberto de Toledo',
