@@ -9,7 +9,8 @@ class convert_sheet:
   
         self.google_sheets = google_api(
             SAMPLE_SPREADSHEET_ID = spreadsheet_id,
-            SAMPLE_RANGE_NAME     = spreadsheet_range
+            SAMPLE_RANGE_NAME     = spreadsheet_range,
+            CREDENTIALS           = credentials
         )
 
 
