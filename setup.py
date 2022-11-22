@@ -7,8 +7,7 @@ setuptools.setup(
     author_email='jose.toledo@institutosingular.org',
     url='https://github.com/josetoledo8/instituto-singular/tree/main/sheets2pdf',
     packages=['read_google_sheets'],
-    install_requires=[
-        'requests', 
+    install_requires=[ 
         'pandas', 
         'google-api-core', 
         'google-api-python-client',
