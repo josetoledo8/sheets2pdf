@@ -5,7 +5,7 @@ setuptools.setup(
     version='0.0.1',
     author='José Roberto de Toledo',
     author_email='jose.toledo@institutosingular.org',
-    url='https://github.com/josetoledo8/instituto-singular/tree/main/sheets2pdf',
+    url='https://github.com/josetoledo8/sheets2pdf',
     packages=['read_google_sheets'],
     install_requires=[ 
         'pandas', 
