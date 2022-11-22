@@ -16,7 +16,7 @@ setuptools.setup(
         "Repo link": "https://github.com/josetoledo8/sheets2pdf"
     },
     license='MIT',
-    packages=['sheets2pdf'],
+    packages=['sheets2pdf', 'sheets2pdf.*'],
     install_requires=[ 
     'pandas', 
     'google-api-core', 
