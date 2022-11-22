@@ -5,7 +5,7 @@ from fpdf import FPDF
 
 class convert_sheet:
 
-    def __init__(self, spreadsheet_id:str, spreadsheet_range:str):
+    def __init__(self, spreadsheet_id:str, spreadsheet_range:str, credentials:str):
   
         self.google_sheets = google_api(
             SAMPLE_SPREADSHEET_ID = spreadsheet_id,
