@@ -12,6 +12,7 @@ setuptools.setup(
         'google-api-core', 
         'google-api-python-client',
         'google-auth',
-        'google-auth-oauthlib'
+        'google-auth-oauthlib',
+        'fpdf'
         ],
 )
