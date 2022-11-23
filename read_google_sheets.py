@@ -5,8 +5,9 @@ from fpdf import FPDF
 
 class convert_sheet:
 
-    def __init__(self, spreadsheet_id:str, spreadsheet_range:str, credentials:str):
+    def __init__(self, spreadsheet_id:str, spreadsheet_range:str, credentials:str, pdf_title):
   
+        self.pdf_title = pdf_title
         self.google_sheets = google_api(
             SAMPLE_SPREADSHEET_ID = spreadsheet_id,
             SAMPLE_RANGE_NAME     = spreadsheet_range,
@@ -31,12 +32,14 @@ class convert_sheet:
         pdf.add_page()
         pdf.set_font("Arial", size = 12)
         
+        # Adiciona titulo ao PDF
+        pdf.cell(200,10, txt = self.pdf_title, ln = 1, align = 'C')
+
         for i, campo in zip(range(len(texto)), texto.keys()):
-            # create a cell
             pdf.cell(200, 10, txt = f'{campo}: {texto[campo]}',
                     ln = i + 1, align = 'L')
         
-        # save the pdf with name .pdf
+        # Salva o PDF
         pdf.output(f"{nome_arquivo}.pdf")
 
 
